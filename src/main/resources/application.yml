@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mib-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mib
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate.ddl-auto: create
+    show-sql: true
+
+jwt:
+  secret: secret
+  expiration: 604800000
